@@ -13,7 +13,7 @@ const App = () => {
   const sendSearchRequest = () => {
     const results = {
       method: "GET",
-      url: "http://localhost:3001/results",
+      url: `${import.meta.env.VITE_SERVER_URL}/results`,
       params: {
         type: chosenType,
         mag: chosenMag,
